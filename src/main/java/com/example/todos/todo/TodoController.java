@@ -21,6 +21,7 @@ public class TodoController {
     public List<Todo> getTodos(){
         return todoRepository.findAll();
     }
+
     //gets multiple "findByID"
     @GetMapping("/{id}")
     public Optional<Todo> getTodo(@PathVariable long id) {
